@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+ }
+/* navigation */
+header {
+  border-bottom: 2px solid black;
+}
+header .container {
+  display:flex;
+}
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+    width: 120px;
+    height: 80px;
+   display:flex;
+   align-items: center;
+}
+nav > ul {
+  list-style:none;
+  width:75%;
+  display:flex;
+  justify-content: flex-end;
+}
+
+nav > ul > li {
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  width:150px;
+  background-color:#2ECC71;
+}
+li > a {
+  color:white;
+  text-decoration:none;
+}
+nav > ul > li:hover {
+  background-color:#4DAF7C;
+  cursor:pointer;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  height:75vh;
+  color:white;
+  background-color:#36D7B7;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+h1 {
+  font-size:48px;
+}
+/*gallery */
+.gallery {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.card {
+  margin:10px;
+  min-width:200px;
+  min-height:100px;
+  background-color: #03A678;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:1s;
+  
+}
+.card:hover{
+  transform:scale(1.1);
+  
+}
+
+/*footer*/
+
+footer {
+  background-color:#6C7A89;
+  color:white;
+  
+}
+
+footer .container {
+  height:100px;
+  display:flex;
+  
+}
+
+.company, .copyright, .contact-data {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.company {
+  flex-grow:2;
+ 
+}
